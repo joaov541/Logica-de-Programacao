@@ -39,5 +39,6 @@ void loop()
   Serial.println("Sua idade em meses: " + String(idadeMeses) );
   Serial.println("Sua idade em Dias: " + String(idadeDias) );
   Serial.println("Sua idade em Horas: " + String(idadeHoras) );
-  Serial.println("Sua idade em minutos: " + String(idadeMinutos) );
+  Serial.println("Sua idade em minutos: " + String(idadeMinutos));
+  delay (6000);
 }

@@ -52,4 +52,5 @@ void loop()
   Serial.println("Seu ano Atual: " + String(anoAtual) );
   Serial.println("Sua idade: " + String(idade) );
   Serial.println("Sua idade em Semanas: " + String(idadeSemanas) );
+  delay (6000);
 }

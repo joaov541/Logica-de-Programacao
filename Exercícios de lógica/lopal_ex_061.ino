@@ -37,5 +37,5 @@ void loop()
   // Limpa o buffer
   while (Serial.available()) { Serial.read(); }
 
-  delay(5000);
+  delay(6000);
 }

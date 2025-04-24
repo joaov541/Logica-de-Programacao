@@ -30,6 +30,6 @@ void loop()
   //Saída
   Serial.println("Numero digitado e: " + String(numero) );
   Serial.println("Dobro do numero e: " + String(dobro) );
-  
+  delay (6000);
   
 }

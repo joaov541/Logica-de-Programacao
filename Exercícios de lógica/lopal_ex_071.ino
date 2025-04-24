@@ -44,8 +44,11 @@ void loop()
   novoSalario = salario * 1.10;
   
   //Saída
+  Serial.println();
   Serial.println("Seu nome: " + nome);
   Serial.println("Seu cargo: " + cargo);
   Serial.println("Seu Salario: " + String(salario));
   Serial.println("Seu novo Salario: " + String(novoSalario));
+  Serial.println();
+  delay (6000);
 }
