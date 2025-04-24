@@ -9,7 +9,17 @@ void setup() {
   Serial.begin(9600);
 }
 
-void loop() {
+void loop()
+{
+  //cabeçalho
+  Serial.println("|------------------------------|");//Primeira Linha
+  Serial.println("|                              |");
+  Serial.println("|                              |");
+  Serial.println("|          LOPAL-EX_05         |");
+  Serial.println("|                              |");
+  Serial.println("|                              |");
+  Serial.println("|------------------------------|");//Ultima linha
+  
   // Entrada
   Serial.println("Digite a medida em centimetros:");
   while (!Serial.available()) {}
