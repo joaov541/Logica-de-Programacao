@@ -45,10 +45,26 @@ void loop()
   
   //Saída
   Serial.println();
-  Serial.println("Seu nome: " + nome);
-  Serial.println("Seu cargo: " + cargo);
-  Serial.println("Seu Salario: " + String(salario));
-  Serial.println("Seu novo Salario: " + String(novoSalario));
   Serial.println();
-  delay (6000);
+  Serial.println("Relatorio:");
+  Serial.println();
+  Serial.println("-------------------------------");
+  Serial.println();
+
+
+  Serial.println("Seu nome: " + nome);
+  Serial.println("Seu cargo: R$ " + cargo);
+  Serial.println("Seu Salario: R$ " + String(salario));
+  Serial.println("Seu novo Salario: R$ " + String(novoSalario));
+  
+  Serial.println();
+  Serial.println("-------------------------------");
+  Serial.println("Digite uma letra + <Enter> para continuar...");
+  while (! Serial.available());
+  Serial.println();
+  Serial.println();
+  
+  Serial.read();
+
+  delay (1000);
 }
