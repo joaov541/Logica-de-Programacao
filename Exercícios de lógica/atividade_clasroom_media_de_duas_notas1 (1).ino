@@ -33,7 +33,7 @@ void loop()
   while(! Serial.available());
   percentual = Serial.parseFloat();
   
-  frequencia = frequencia + (percentual /100 * percentual);//pegue de exemplo a estrutura da porcentagem.
+  frequencia = frequencia + (percentual /100 * percentual);//peguei de exemplo a estrutura da porcentagem.
   
   media = (nota1+nota2) / 2;
   
