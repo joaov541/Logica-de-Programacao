@@ -1,18 +1,41 @@
 
 //variáveis
-float numero1 = 0;
-float numero2 = 0;
-float soma; 
+
 float subtracao;
 float multiplicacao;
 float divisao;
 int escolhaDaOperacao;
 int contador = 0;
+float resultado = 0;
+float somar(float numero1,float numero2 ,float numero3 = 0){
+
+   return (numero1 + numero2 + numero3);  
+}
+ 
+float subtrair(float numero1, float numero2){
+
+return (numero1-numero2);
+
+}
+
+float multiplicar(float numero1,float numero2){
+return (numero1*numero2);
+
+}
+
+float dividir(float numero1, float numero2){
+return (numero1 / numero2);
+  
+}
+
+
 
 void setup()
 {
   Serial.begin(9600);
   
+float numero1 = 0;
+float numero2 = 0;
   
   do{
     Serial.println("Bem-vindo(a) a calculadora mega inteligente!!!");
@@ -33,32 +56,35 @@ void setup()
     while(! Serial.available());
     numero2 = Serial.parseFloat();
      
-  
-  
+ 
   switch(escolhaDaOperacao){
       case 1:
-       soma = numero1+numero2;
-      Serial.println("WOW!!! o resultado foi: " + String(soma)); 
+    resultado = somar(numero1, numero2, 5);
+      Serial.println("WOW!!! o resultado foi: " + String(resultado));
+      //Serial.println("WOW!!! o resultado foi: " + String(somar()));  segunda opção
+
       break;
     
     case 2:
-      subtracao = numero1-numero2;
-      Serial.println("WOW!!! o resultado foi: " + String(subtracao));
+    resultado = subtrair(numero1, numero2);
+      Serial.println("WOW!!! o resultado foi: " + String(resultado));
       break;
     
     case 3:
-      multiplicacao = numero1*numero2;
-      Serial.println("WOW!!! o resultado foi: " + String(multiplicacao));
+    resultado = multiplicar(numero1, numero2);
+      Serial.println("WOW!!! o resultado foi: " + String(resultado));
       break;
     
     case 4:
-      divisao = numero1/numero2;
-      Serial.println("WOW!!! o resultado foi: " + String(divisao));
+    resultado = dividir(numero1, numero2);
+      Serial.println("WOW!!! o resultado foi: " + String(resultado));
       break;
     
     default:
     Serial.println("opcao invalida");
-  	}
+  	
+    }  
+    
   }
     while(contador != 0);
  }
