@@ -82,15 +82,21 @@ void loop()
       delay(600);
       digitalWrite(7, LOW);
     } else if(acerto == 2){
+      digitalWrite(7, HIGH);
+      delay(600);
+      digitalWrite(7, LOW);
       digitalWrite(3, HIGH);
 
     } else if(acerto == 3){
+      digitalWrite(7, HIGH);
+      delay(600);
+      digitalWrite(7, LOW);
       digitalWrite(2, HIGH);
       
      motor.attach(13);
 
       delay(300);
-     motor.write(90);
+     motor.write(180);
 
     }
 
